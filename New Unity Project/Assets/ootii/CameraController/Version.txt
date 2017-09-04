@@ -1,0 +1,9 @@
+﻿Camera Controller
+Version 3.13
+Mar 21, 2017
+
+- Added new view option to Unity Input Source
+- Added better support for UWP
+- Decreased default smoothing value
+- Fixed issue with tilting not being applied to offset
+- fixed 1st Person View motor to rotate with anchor

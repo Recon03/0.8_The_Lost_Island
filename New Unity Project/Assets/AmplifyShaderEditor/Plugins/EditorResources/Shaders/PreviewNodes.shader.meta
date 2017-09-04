@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: e8943a090de35de42aa85974c45f0335
+timeCreated: 1486997004
+licenseType: Store
+ShaderImporter:
+  defaultTextures:
+  - _WorldNormal: {fileID: 2800000, guid: e7103561e2f092f43ac47d7e2d77b5e0, type: 3}
+  - _WorldViewDir: {fileID: 2800000, guid: c015a8c06d77b6a4094c8adf283d325c, type: 3}
+  - _TangentViewDir: {fileID: 2800000, guid: 52d29ba5821aa294299a47a8cc5e2766, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

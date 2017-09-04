@@ -1,0 +1,12 @@
+Actor Controller
+Version 0.88
+Mar 21, 2017
+
+- Major re-write of the internal code
+- Better grounding and slope handling
+
+- Set properties to
+  * Force Grounding Distance: 0.3
+  * StepUpSpeed: 0.75
+  * StepDownSpeed: 0.75
+

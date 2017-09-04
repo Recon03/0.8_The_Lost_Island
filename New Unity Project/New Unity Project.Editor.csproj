@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D0D6DBA-D4EA-5009-48A2-1663BA1D134D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.6.3f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;USE_ACTOR_CONTROLLER;USE_MOTION_CONTROLLER;CROSS_PLATFORM_INPUT;MOBILE_INPUT;USE_CAMERA_CONTROLLER;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;USE_ACTOR_CONTROLLER;USE_MOTION_CONTROLLER;CROSS_PLATFORM_INPUT;MOBILE_INPUT;USE_CAMERA_CONTROLLER;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>Library\UnityAssemblies\UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="New Unity Project.csproj">
+      <Project>{BFD958C4-5209-89E8-D1A0-F25854A4DC74}</Project>
+      <Name>New Unity Project</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Actions\ActionData.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Actions\ActionLog.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Actions\ActionSequence.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Constants.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\EditorOptions.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Graphs\NodeGrid.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Graphs\ParentGraph.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\AmplifyShaderEditorWindow.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\AutoPanData.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\Clipboard.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\ConfirmationWindow.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\ContextMenuItem.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\CustomStylesContainer.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\DebugConsoleWindow.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\DragAndDropTool.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\DuplicatePreventionBuffer.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\GraphContextMenu.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\MenuParent.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\NodeParametersWindow.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\Palette\ContextPalette.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\Palette\PaletteParent.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\Palette\PalettePopUp.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\Palette\PaletteWindow.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\PortLegendInfo.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\SceneSaveCallback.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\ShaderEditorModeWindow.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\ShaderLibrary.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\Tools\ToolsMenuButton.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\Tools\ToolsMenuButtonParent.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\Tools\ToolsMenuButtonSep.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Menu\Tools\ToolsWindow.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackColor.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackFloat.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackInt.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackMatrix4x4.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackString.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackTexture.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackVariable.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackVector2.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackVector3.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\FallbackVector4.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Native\IFallbackVars.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\CommentaryNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ColorNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\IntNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\Matrix3X3Node.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\Matrix4X4Node.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\PiNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\PropertyNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\RangedFloatNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\CameraAndScreen\CameraProjectionNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\CameraAndScreen\CameraWorldClipPlanes.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\CameraAndScreen\OrthoParams.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\CameraAndScreen\ProjectionParams.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\CameraAndScreen\ScreenParams.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\CameraAndScreen\WorldSpaceCameraPos.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\CameraAndScreen\ZBufferParams.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\ConstVecShaderVariable.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\ConstantShaderVariable.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\FogAndAmbient\FogAndAmbientColorsNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\FogAndAmbient\FogParamsNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Lighting\LightColorNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Lighting\WorldSpaceLightPos.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\ShaderVariablesNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Time\CosTime.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Time\DeltaTime.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Time\SinTimeNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Time\TimeNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\InverseTranspMVMatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\MMatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\MVMatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\MVPMatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\ObjectToWorldMatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\ProjectionMatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\Texture0MatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\Texture1MatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\Texture2MatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\Texture3MatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\TransformVariables.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\TransposeMVMatrix.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\UnityScaleMatrix.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\ViewMatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\ViewProjectionMatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\WorldToObjectMatrix.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Transform\WorldToTangentMatrix.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Various\ColorSpaceDouble.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\ShaderVariables\Various\LODFadeNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\TauNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\TextureArrayNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\Vector2Node.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\Vector3Node.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Constants\Vector4Node.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\CustomAddNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\CustomNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\DrawInfo.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\DynamicTypeNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\ComputeGrabScreenPosHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\ComputeScreenPosHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\DecodeFloatRGBAHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\DecodeFloatRGHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\DecodeLightmapHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\DecodeViewNormalStereoHlpNode .cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\DitheringNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\EncodeFloatRGBAHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\EncodeFloatRGHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\EncodeViewNormalStereoHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\GammaToLinearNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\HelperParentNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\LinearToGammaNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\LuminanceHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\ObjSpaceLightDirHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\ObjSpaceViewDirHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\ParallaxMappingNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\ParallaxOcclusionMappingNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\ParallaxOffsetHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\ShadeVertexLightsHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\SurfaceDepthNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\UnityObjToClipPosHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\UnityObjToViewPosHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\WorldSpaceLightDirHlpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\HelperFuncs\WorldSpaceViewDirHlpNode .cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\ISignalGenerator.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\ImageEffects\BlendOpsNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\ImageEffects\DesaturateOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\ImageEffects\NoiseGeneratorNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\ImageEffects\PosterizeNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\ImageEffects\SimpleContrastOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\ImageEffects\SimplexNoiseNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\ImageEffects\TFHCGrayscale.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\ConditionalIfNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCCompareEqual.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCCompareGreater.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCCompareGreaterEqual.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCCompareLower.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCCompareLowerEqual.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCCompareNotEqual.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCCompareWithRange.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCIf.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\LogicalOperators\TFHCStub.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\BillboardOpHelper.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\BlendOpsHelper.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\CodeGenerationData.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\ColorMaskHelper.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\LogNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\MasterNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\MasterNodeDataCollector.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\OutlineOpHelper.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\RenderingOptionsOpHelper.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\RenderingPlatformsOpHelper.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\StandardSurface.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\StencilBufferOpHelper.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\TessellationOpHelper.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Master\ZBufferOpHelper.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\AppendNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\BreakToComponentsNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\CustomExpressionNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\FresnelNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\GetLocalVarNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\LayeredBlendNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\MatrixFromVectors.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\PosFromTransformMatrix.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\RegisterLocalVarNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\RelayNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\SummedBlendNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\SwitchNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\SwizzleNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\ToggleSwitchNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\Transformation\ObjectToWorldTransfNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\Transformation\ParentTransfNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\Transformation\WorldToObjectTransfNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\VectorFromMatrixNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\WeightedAvgNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\WeightedBlendNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Misc\WireNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\NodeAttributes.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\NodeRestrictions.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\NodeUsageRegister.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\NodeUtils.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ACosOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ASinOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ATan2OpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ATanOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\AbsOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\AddOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\CeilOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ClampOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ClipNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ComponentMaskNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\CosOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\CoshOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\CrossProductOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\DdxOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\DdyOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\DegreesOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\DeterminantOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\DistanceOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\DivideOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\DotProductOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\Exp2OpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ExpOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ExtensibleInputPortNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\FWidthOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\FloorOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\FmodOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\FractNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\InverseOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\LengthOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\LerpOp.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\Log10OpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\Log2OpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\LogOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\MaxOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\MinOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\MultipleInputOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\MultiplyOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\NegateNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\NormalizeNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\OneMinusNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\PowerNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\RSqrtOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\RadiansOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ReflectOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\RefractOpVec.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\RoundOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\SaturateNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ScaleAndOffsetNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\ScaleNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\SignOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\SimplifiedFModOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\SinOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\SingleInputOp.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\SinhOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\SmoothstepOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\SqrtOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\StepOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\SubtractOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\TFHCRemapNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\TanOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\TanhOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\TransformVectorOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\TransposeOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\TruncOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Operators\VariablePortTypeOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\ParentNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SignalGeneratorNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SimpleNodes\SimpleAddOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SimpleNodes\SimpleDivideOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SimpleNodes\SimpleMaxOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SimpleNodes\SimpleMinOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SimpleNodes\SimpleMultiplyOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SimpleNodes\SimpleRemainderNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SimpleNodes\SimpleSubtractOpNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\ColorInputsNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\GrabScreenPosition.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\LocalVertexPosNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\ScreenColorNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\ScreenDepthNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\ScreenPosInputsNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\SurfaceShaderINParentNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\TexelSizeNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\UVCoordsParentNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\ViewDirInputsCoordNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\WorldNormalInputsNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\WorldNormalVector.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\WorldPosInputsNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\WorldReflInputsNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\SurfaceShaderInputs\WorldReflectionVector.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\BlendNormalsNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\HeightMapBlendNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\PannerNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\RotatorNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\SamplerNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\SubstanceSamplerNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\TFHCFlipBookUVAnimation.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\TFHCPixelate.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\TextureCoordinatesNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\TexturePropertyNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\UnpackScaleNormalNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Textures\VirtualTextureObject.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\ColorVertexDataNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\NormalVertexDataNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\PosVertexDataNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\TangentVertexDataNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\Tessellation\DistanceBasedTessNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\Tessellation\EdgeLengthCullTessNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\Tessellation\EdgeLengthTessNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\Tessellation\TessellationParentNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\TexCoord1VertexDataNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\TexCoordVertexDataNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\VertexBinormalNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\VertexColorNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\VertexDataNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\VertexTangentNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Nodes\Vertex\VertexToFragmentNode.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\PreMadeShaders.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Templates\TemplatesManager.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\CustomMaterialInspector.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\CustomShaderInspector.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\EditorVariablesManager.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\GenericMessage.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\IOUtils.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\InvalidDataChecker.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\NodeExporterUtils.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\ShortcutsManager.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\UIUtils.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\UndoUtils.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Version\About.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Version\VersionInfo.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Wires\GLDraw.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Wires\InputPort.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Wires\OutputPort.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Wires\WireBezierReference.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Wires\WirePort.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Wires\WireReference.cs" />
+    <Compile Include="Assets\MapMagic\Editor\CurveEditor.cs" />
+    <Compile Include="Assets\MapMagic\Editor\MapMagicEditor.cs" />
+    <Compile Include="Assets\MapMagic\Editor\MapMagicWindow.cs" />
+    <Compile Include="Assets\MapMagic\Editor\MatrixAssetEditor.cs" />
+    <Compile Include="Assets\MapMagic\Editor\PopupMenu.cs" />
+    <Compile Include="Assets\MapMagic\Editor\PreviewWindow.cs" />
+    <Compile Include="Assets\WorldStreamer\Scritps\Editor\ColliderStreamerEditor.cs" />
+    <Compile Include="Assets\WorldStreamer\Scritps\Editor\ColliderStreamerManagerEditor.cs" />
+    <Compile Include="Assets\WorldStreamer\Scritps\Editor\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\WorldStreamer\Scritps\Editor\LocalAreaUpdaterEditor.cs" />
+    <Compile Include="Assets\WorldStreamer\Scritps\Editor\SceneSplitterEditor.cs" />
+    <Compile Include="Assets\WorldStreamer\Scritps\Editor\StreamerEditor.cs" />
+    <Compile Include="Assets\WorldStreamer\Scritps\Editor\TerrainCullingSystemEditor.cs" />
+    <Compile Include="Assets\WorldStreamer\Scritps\Editor\TerrainManagerSerialize.cs" />
+    <Compile Include="Assets\WorldStreamer\Scritps\LightningManager\Editor\LightningManager.cs" />
+    <Compile Include="Assets\ootii\ActorController\Code\Actors\CharacterControllers\Drivers\Editor\AnimatorDriverEditor.cs" />
+    <Compile Include="Assets\ootii\ActorController\Code\Actors\CharacterControllers\Drivers\Editor\MoveToDriverEditor.cs" />
+    <Compile Include="Assets\ootii\ActorController\Code\Actors\CharacterControllers\Drivers\Editor\NavMeshDriverEditor.cs" />
+    <Compile Include="Assets\ootii\ActorController\Code\Actors\CharacterControllers\Drivers\Editor\NavMeshFollowerEditor.cs" />
+    <Compile Include="Assets\ootii\ActorController\Code\Actors\CharacterControllers\Editor\ActorControllerEditor.cs" />
+    <Compile Include="Assets\ootii\ActorController\Code\Actors\CharacterControllers\Editor\ActorControllerEditorSymbol.cs" />
+    <Compile Include="Assets\ootii\ActorController\Code\Actors\CharacterControllers\Editor\ActorDriverEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\Code\Cameras\Editor\CameraControllerEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\Code\Cameras\Editor\CameraControllerEditorSymbol.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\ReadMeEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_Area2DEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_AutoStampMaker.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_ComputeEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_GenerateEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_ItemBehaviourEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_LayerGUI.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_LayerGroupGUI.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_LayerGroupResultGUI.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_MeasureTerrainsEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_NodeGUI.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_NodeGroupGUI.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_NodeWindow.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_RawImageEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_SelectItemGUI.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_SelectItemGroupGUI.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_SettingsEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_TerrainAreaEditor.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TC_TerrainLayerGUI.cs" />
+    <Compile Include="Assets\ootii\CameraController\TerrainComposer2\Scripts\Editor\TD.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Actors\Attributes\BasicAttributes\Editor\BasicAttributesEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Actors\Inventory\BasicInventory\Editor\BasicInventoryEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Actors\LifeCores\Editor\ActorCoreEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Cameras\Editor\FollowRigEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Cameras\Editor\OrbitRigEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Cameras\Editor\ScrollerRigEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Editor\EditorExt.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Game\Editor\GameCoreEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Geometry\Editor\BezierSplineInspector.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Geometry\Editor\MeshPartitionerEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Graphics\Editor\GraphicsManagerEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Helpers\Editor\EditorHelper.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Input\Editor\UnityInputSourceEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Utilities\Debug\Editor\LogEditor.cs" />
+    <Compile Include="Assets\ootii\Framework_v1\Code\Utilities\Debug\Editor\SceneFlagsEditor.cs" />
+    <Compile Include="Assets\ootii\MotionController\Code\Actors\AnimationControllers\MotionController\Editor\MotionControllerEditor.cs" />
+    <Compile Include="Assets\ootii\MotionController\Code\Actors\AnimationControllers\MotionController\Editor\MotionControllerEditorSymbol.cs" />
+    <Compile Include="Assets\ootii\MotionController\Code\Input\Editor\NavMeshInputSourceEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\AntialiasingEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\BloomAndFlaresEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\BloomEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\CameraMotionBlurEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\ColorCorrectionCurvesEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\ColorCorrectionLookupEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\CurveAdder.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\DepthOfFieldDeprecatedEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\DepthOfFieldEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\EdgeDetectionEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\FindMissingReferences.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\GIEmissiveOnlyShaderGUI.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\NoiseAndGrainEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\SunShaftsEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\TonemappingEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Scripts\Editor\VignetteAndChromaticAberrationEditor.cs" />
+    <Compile Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Bloom_V2\Editor\VideoBloomEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\AmplifyShaderEditor\ChangeLog.txt" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Community\Dissolve Burn\Credits.txt" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Community\Dissolve Burn\DissolveBurn.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Community\EnvironmentGradient\Credits.txt" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Community\EnvironmentGradient\MourEnvironmentGradient.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Credits.txt" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\DownloadSamplesInstructions.txt" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\AnimatedFire\AnimatedFire.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Burn\BurnEffect.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\CubemapReflections\CubemapReflections.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Dithering\DitheringFade.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Extrusion\NormalExtrusion.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Matcap\MatcapSample.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\ObjectNormalRefraction\ObjectNormalRefraction.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\ObjectNormalRefraction\ShaderBallInterior.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Outline\Outline.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\ParallaxMapping\ParallaxMappingIterations.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\ParallaxOcclusionMappingPOM\SandPOM.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\ParallaxOffsetFakeInterior\ParallaxWindow.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\PositionCutoff\LocalPosCutoff.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\ReadFromAtlasTiled\ImprovedReadFromAtlasTiled.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\ReadFromAtlasTiled\ReadFromAtlasTiled.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\ReflectRefractSoapBubble\ReflectRefractSoapBubble.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\RefractedShadows\RefractedShadows.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\RimLight\RimLight.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\ScreenSpaceCurvature\ScreenSpaceCurvature.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\ScreenSpaceDetail\ScreenSpaceDetail.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\SimpleBlur\SimpleBlur.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\SimpleGPUInstancing\SimpleGPUInstancing.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\SimpleLambert\SimpleLambert.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\SimpleNoise\SimpleNoise.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\SimpleRefraction\SimpleRefraction.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\SimpleTexture\SimpleTexture.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\SnowAccum\SnowAccum.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\StencilExample\Portals\Portal01\StencilDiffuse01.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\StencilExample\Portals\Portal01\StencilMask01.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\StencilExample\Portals\Portal02\StencilDiffuse02.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\StencilExample\Portals\Portal02\StencilMask02.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\StencilExample\Portals\Portal03\StencilDiffuse03.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\StencilExample\Portals\Portal03\StencilMask03.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\StencilExample\RefractionsPanels\AnimatedRefraction.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Substance\SubstanceExample.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Tessellation\Tessellation.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\TextureArray\TextureArray.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Translucency\Translucency.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Transmission\Transmission.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Transparency\Transparency.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\TriplanarProjection\TriplanarProjection.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Water\Ground.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\Water\WaterSample.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\WorldPosSLices\WorldPosSlices.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\LinearPreviews.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ACosOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ASinOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ATan2OpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ATanOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_AbsOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_AppendNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_BlendNormalsNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_BreakToComponentsNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CeilOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ClampOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ColorNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ComponentMaskNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CosOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CosTime.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CoshOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CrossProductOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DdxOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DdyOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DegreesOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DeltaTime.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DistanceOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DotProductOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Exp2OpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ExpOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FWidthOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FloorOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FmodOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FractNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FresnelNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_GetLocalVarNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_IntNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LengthOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LerpOp.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Log10OpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Log2OpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LogOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NegateNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NodeMasking.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NormalVertexDataNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NormalizeNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_OneMinusNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PannerNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ParallaxMappingNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PiNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PosVertexDataNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PowerNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RadiansOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RangedFloatNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ReflectOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RefractOpVec.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RegisterLocalVarNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RelayNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RotatorNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RoundOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RsqrtOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SamplerNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SaturateNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ScaleAndOffsetNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ScaleNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SignOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleAddOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleDivideOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleMaxOp.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleMinNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleMultiplyOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleRemainderNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleSubtractOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimplifiedFModOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SinOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SinTimeNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SinhOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SmoothstepOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SqrtOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_StepOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCFlipBookUVAnimation.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCPixelateUV.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCRemap.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TanOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TangentVertexDataNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TanhOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TauNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TexCoordVertexDataNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TextureArrayNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TextureCoordinatesNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TexturePropertyNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TimeNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TruncOpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_UnpackScaleNormalNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Vector2Node.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Vector3Node.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Vector4Node.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_VertexBinormalNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_VertexColorNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_VertexTangentNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ViewDirInputsCoordNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WireNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldNormalVector.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldPosInputsNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldReflectionVector.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldSpaceLightDirHlpNode.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\ShaderLibrary\ShaderLibrary.txt" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Shaders\PreviewNodes.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Shaders\Unlit-ColoredAlpha.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Readme.txt" />
+    <None Include="Assets\MapMagic\Shaders\TerrainPreviewBase.shader" />
+    <None Include="Assets\MapMagic\Shaders\TerrainPreviewFirstPass.shader" />
+    <None Include="Assets\WorldStreamer\Standard Assets World streamer\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\ootii\AC_ReadMe.txt" />
+    <None Include="Assets\ootii\ActorController\Version.txt" />
+    <None Include="Assets\ootii\CameraController\TerrainComposer2\ReadMe.txt" />
+    <None Include="Assets\ootii\CameraController\TerrainComposer2\Shaders\Compute\FlattenTerrain.shader" />
+    <None Include="Assets\ootii\CameraController\TerrainComposer2\Shaders\Compute\TC_Compute.compute" />
+    <None Include="Assets\ootii\CameraController\TerrainComposer2\Shaders\Compute\TC_Noise.cginc" />
+    <None Include="Assets\ootii\CameraController\TerrainComposer2\Shaders\Compute\TC_Noise2.cginc" />
+    <None Include="Assets\ootii\CameraController\TerrainComposer2\Shaders\Compute\TC_NoisesAdvanced.cginc" />
+    <None Include="Assets\ootii\CameraController\Version.txt" />
+    <None Include="Assets\ootii\CameraController_ReadMe.txt" />
+    <None Include="Assets\ootii\Framework_v1\Content\Models\Rust_MW2\Rust_MW2_License.txt" />
+    <None Include="Assets\ootii\Framework_v1\Content\Resources\Shaders\ClearBlit.shader" />
+    <None Include="Assets\ootii\Framework_v1\Content\Resources\Shaders\GraphicsManagerUI.shader" />
+    <None Include="Assets\ootii\Framework_v1\Content\Resources\Shaders\RadialBlit.shader" />
+    <None Include="Assets\ootii\Framework_v1\Content\Resources\Shaders\TransparencyBlit.shader" />
+    <None Include="Assets\ootii\MC2_ReadMe.txt" />
+    <None Include="Assets\ootii\MotionController\Version.txt" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\Hair\Hair.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\Hair\HairLightingInc.cginc" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\BlendModesOverlay.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Bloom_V2\VideoBloom.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\BlurEffectConeTaps.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\CameraMotionBlur.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\CameraMotionBlurDX11.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ChromaticAberrationShader.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ColorCorrection3DLut.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ColorCorrectionCurves.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ColorCorrectionCurvesSimple.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ColorCorrectionEffect.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ColorCorrectionSelective.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ColorFilter.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Contrast Stretch\Adaptation.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Contrast Stretch\Apply.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Contrast Stretch\Luminance.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Contrast Stretch\MinMaxReduction.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ContrastComposite.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ConvertDepth.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Coord.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\CreaseApply.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Depth.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\DepthBreaks.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\EdgeDetectNormals.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\FilmGrain.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\FinalInterpolation.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\FisheyeShader.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\GlobalFog.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\GrayscaleEffect.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\InterpolateAlongRays.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\MotionBlur.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\MotionBlurClear.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\NoiseAndGrain.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\NoiseAndGrainDX11.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\NoiseEffectShaderRGB.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\NoiseEffectShaderYUV.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\PrepareSunShaftsBlur.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\RadialBlur.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Raymarch.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\SSAOShader.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\SamplePositions.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ScreenSpaceAmbientObscurance.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\SepiaToneEffect.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Shared.cginc" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\ShowAlphaChannel.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\SimpleClear.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\SunShaftsComposite.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\Tonemapper.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\TwirlEffect.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\VignettingShader.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\VortexEffect.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_Antialiasing\DLAA.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_Antialiasing\FXAA2.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_Antialiasing\FXAA3Console.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_Antialiasing\FXAAPreset2.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_Antialiasing\FXAAPreset3.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_Antialiasing\NFAA.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_Antialiasing\SSAA.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\Blend.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\BlendForBloom.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\BlendOneOne.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\BlurAndFlares.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\BrightPassFilter.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\BrightPassFilter2.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\LensFlareCreate.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\MobileBloom.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\MobileBlur.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\SeparableBlurPlus.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_BloomAndFlares\VignetteShader.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_DepthOfField\Bokeh34.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_DepthOfField\DepthOfField34.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_DepthOfField\DepthOfFieldDX11.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_DepthOfField\DepthOfFieldScatter.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_DepthOfField\SeparableBlur.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\ImageEffects\frag_ao.cginc" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\Lighting\GIEmissiveOnly.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\Projectors\ProjectorLight.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\Projectors\ProjectorMultiply.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\Skin\Skin.shader" />
+    <None Include="Assets\ootii\Unity\Labs\Shaders\Skin\SkinLightingInc.cginc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
